@@ -18,6 +18,4 @@ Route::get('/', function () {
     return Inertia::render('Home');
 });
 
-Route::get('/nhl', function () {
-    return Inertia::render('NHL');
-});
+Route::get('/nhl', App\Http\Controllers\NHLController::class);
